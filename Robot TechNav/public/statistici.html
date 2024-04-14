@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="statistici.css" rel="stylesheet">
+    <title>TechNav</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="title">TechNav</h1>
+        <div class="container">
+            <a href="main.html"><button class="depth" type="button"><span>HOME</span></button></a>
+            <button class="depth" id="vertical-text" type="button"><span>MANUAL</span><span>UTILIZARE</span></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-container">
+            <div class="grid-item">
+                <h2>Indicatori de Performanță</h2>
+                <div class="grid-container">
+                    <section>
+                        <h3 class="tooltip">Timp Mediu de Reparare (MTTR) <span class="tooltiptext">Un indicator de performanță care măsoară media timpului necesar pentru a remedia o defecțiune într-un echipament sau sistem, evaluând astfel eficiența procesului de reparație.</span></h3>
+                        <!-- Grafic pentru MTTR -->
+                        <canvas id="repairTimeChart"></canvas>
+                    </section>
+                    <section>
+                        <h3 class="tooltip">Randamentul Muncii <span class="tooltiptext">Acest indicator măsoară eficiența lucrărilor în reparațiile navale, exprimând raportul dintre lucrări/sarcini și timpul/efortul alocate.</span></h3>
+                        <!-- Grafic pentru Randamentul muncii -->
+                        <canvas id="workEfficiencyChart"></canvas>
+                    </section>
+                    <section>
+                        <h3 class="tooltip">Productivitatea Muncii <span class="tooltiptext">Acest indicator măsoară eficiența utilizării utilajului în reparațiile navale, raportând volumul de muncă efectuat la numărul de ore alocate.</span></h3>
+                        <!-- Grafic pentru productivitatea muncii -->
+                        <canvas id="labourProductivityChart"></canvas>
+                    </section>
+                    <section>
+                        <h3 class="tooltip">Respectarea termenelor de livrare <span class="tooltiptext">Acest indicator evaluează eficiența utilizării utilajului în reparațiile navale, fiind calculat ca raport între volumul de muncă și orele alocate.</span></h3>
+                        <!-- Grafic pentru Delivery On Time Rate -->
+                        <canvas id="deliveryOnTimeRateChart"></canvas>
+                    </section>
+                    <section>
+                        <h3 class="tooltip">Utilizarea capacității <span class="tooltiptext">Acest indicator evaluează procentul de timp în care resursele sunt utilizate în reparațiile navale, util pentru evaluarea eficienței docurilor sau a altor facilități. O rată ridicată indică o planificare și gestionare eficientă a lucrărilor.</span></h3>
+                        <!-- Grafic pentru Utilization Rate -->
+                        <canvas id="utilizationRateChart"></canvas>
+                    </section>
+                    <section>
+                        <h3 class="tooltip">Reparații repetate <span class="tooltiptext">Acest indicator evaluează frecvența reapariției aceleiași defecțiuni sau categorii de defecțiuni după remediere. O rată ridicată poate indica probleme în calitatea lucrărilor sau în procesele de diagnosticare.</span></h3>
+                        <!-- Grafic pentru Repeat Repair Rate -->
+                        <canvas id="repeatRepairRateChart"></canvas>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="statistici.js"></script>
+
+</body>
+</html>
