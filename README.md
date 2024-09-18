@@ -1,7 +1,7 @@
 # code-web-dev
 This repository contains web development projects. Listed below are included projects:
 
-## Proiecte
+## Projects
 
 - **Birthday Invite Project:** 
 - **CSS Flag Project:** 
